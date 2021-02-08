@@ -4,11 +4,6 @@ pipeline {
 
   stages {
 
-    stage('Git') {
-      steps {
-        git 'https://github.com/citestcd/node-app.git'
-      }
-    }
 
     stage('Build') {
       steps {
