@@ -4,9 +4,11 @@ pipeline {
 
   stages {
 
-    stage ('SCM checkout'){
-            git "https://github.com/hiraxwahid/pytest/"
-            }
+    stage('Git') {
+      steps {
+        git 'https://github.com/citestcd/node-app.git'
+      }
+    }
 
     stage('Build') {
       steps {
